@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment.PaymentMidtransActivty">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/nama_toko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:text="TB CIBEBER KENCANA 2"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/produk_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@id/nama_toko"
+        android:backgroundTint="#FAFAFA"
+        android:contentDescription="@string/gambar_produk"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:layout_below="@id/produk_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toko material"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:textSize="25sp"
+        android:id="@+id/nama_produk"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/nama_produk"
+        android:id="@+id/harga_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toko material"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/harga_produk"
+        android:id="@+id/berat_produk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="berat"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/tv_namabuyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nama Buyer"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/berat_produk"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputnamabuyer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_namabuyer"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etnamaBuyer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : Agus Wicaksono"
+            android:inputType="text"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_Phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Nomor HP"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputnamabuyer"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputphonebuyer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_Phone"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etphonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : 08975324235"
+            android:inputType="phone"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputphonebuyer"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputemailbuyer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_email"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etemail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : agus21@gmail.com"
+            android:inputType="text"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Alamat pengiriman"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputemailbuyer"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputadress"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_adress"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etadress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : jalan perkasa no 52 rt 01/03"
+            android:inputType="text"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Kota"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputadress"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputcity"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_city"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etcity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : Jakarta"
+            android:inputType="text"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_postal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Kode Pos"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputcity"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputpostal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_postal"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etpostal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : 10130"
+            android:inputType="number"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_jumlahProduk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Jumlah Produk"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputpostal"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputjumlahproduk"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/tv_jumlahProduk"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/etJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_drawable"
+            android:hint="Contoh : 10"
+            android:inputType="numberDecimal"
+            tools:ignore="HardcodedText,Autofill,LabelFor,TextFields,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_ongkos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Pengiriman"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textInputjumlahproduk"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textselectongkos"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_below="@id/tv_ongkos"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/select_ongkos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/select_category"
+            android:labelFor="@id/textselectongkos"
+            android:background="@drawable/custom_drawable"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/tv_diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Diskon"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@id/textselectongkos"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textselectdiskon"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_below="@id/tv_diskon"
+        tools:ignore="MissingConstraints">
+
+        <Spinner
+            android:id="@+id/select_diskon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/select_category"
+            android:labelFor="@id/textselectongkos"
+            android:background="@drawable/custom_drawable"
+            android:spinnerMode="dropdown"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/tv_beratpengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="berat"
+        android:textColor="@color/red"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textselectdiskon"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hargapromo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Diskon"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_beratpengiriman"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_hargapengiriman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:text="pengiriman"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_hargapromo"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_jmlHarga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Total Harga"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_hargapengiriman"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/pesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="Pesan sekarang"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_below="@id/tv_jmlHarga"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/login_btn_bg"
+        android:text="kembali ke home"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@id/pesan"
+        android:layout_below="@id/tv_jmlHarga"
+        tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</ScrollView>

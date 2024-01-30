@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.seller.DaftarJualHistory">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daftar jual saya"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10sp"
+        android:textSize="25sp"
+        android:layout_marginBottom="16dp"
+        android:id="@+id/seller_daftar"
+        tools:ignore="HardcodedText" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_seller"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_drawable"
+        app:cardCornerRadius="10sp"
+        android:orientation="vertical"
+        android:paddingLeft="30sp"
+        android:layout_below="@+id/seller_daftar"
+        tools:ignore="RtlHardcoded,RtlSymmetry">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/TV_totalrp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Total Pendaptan"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/TV_totalbrg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TV_totalrp"
+                android:layout_marginLeft="16dp"
+                android:text="Total PRoduk"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroolviewe"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/card_seller">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:orientation="horizontal"
+            tools:ignore="RtlHardcoded,ScrollViewSize">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView_productSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/soft"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_edit_"
+                        android:padding="10sp"
+                        app:tint="@color/darksoft"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Product"
+                        android:textColor="@color/darksoft"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/daftarHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/darker"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_history_24"
+                        android:padding="10sp"
+                        app:tint="@color/white"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="History"
+                        android:textColor="@color/text"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/daftarCtgy"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/soft"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_category_24"
+                        android:padding="10sp"
+                        tools:ignore="ContentDescription"
+                        app:tint="@color/darksoft" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category"
+                        android:textColor="@color/darksoft"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        tools:ignore="HardcodedText"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/daftarPengiriman"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/soft"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_directions_car_24"
+                        android:padding="10sp"
+                        android:backgroundTint="@color/white"
+                        tools:ignore="ContentDescription"
+                        app:tint="@color/darksoft" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pengiriman"
+                        android:textColor="@color/darksoft"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/daftarPromo"
+                android:layout_width="wrap_content"
+                android:layout_height="60sp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/soft"
+                app:cardCornerRadius="8sp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_margin="10sp"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/baseline_discount_24"
+                        android:padding="10sp"
+                        tools:ignore="ContentDescription"
+                        app:tint="@color/darksoft" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Promo"
+                        android:textColor="@color/darksoft"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:padding="10sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/daftar_jualEdit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/scroolviewe"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/login_btn_bg"
+        android:textColor="@color/text"
+        android:textSize="18sp"
+        android:text="unduh Data pendapatan"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_history"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/daftar_jualEdit"
+        android:layout_marginStart="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginEnd="10sp"
+        android:layout_marginBottom="10dp" />
+
+    <RelativeLayout
+        android:id="@+id/kalaukosongHistory"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_above="@+id/navigation"
+        android:layout_below="@+id/daftar_jualEdit"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="30dp"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/imagekl"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/jika_product_kosong"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagekl"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:text="Belum ada produkmu yang di Order nihh, \n sabar ya rezeki nggk kemana kok"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/navbar_btn"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/menu"
+        tools:ignore="MissingConstraints" />
+
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TB Cibeber Kencana 2</string>
+    <string name="select_category">Pilih Kategori</string>
+    <string name="gambar_produk">gambar produk</string>
+    <string name="kategori"><u><b>Nama Kategori</b></u></string>
+</resources>
